@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(font.css);
+
+.mo{display: none;}
+html{font-size: 20px;}
+
+body{overflow-x: hidden;}
+
+.center1115{max-width: 1115px; margin: 0 auto;}
+
+
+.ddong{position: fixed; z-index: 777; width: 50px; height: 50px; border-radius: 50%; transition: ease-out; pointer-events: none; border: 4px solid rgba(0,0,0,0.3); background: rgba(255,255,255,0.3);}
+
+header{width: 100%; position: absolute; height: 5rem; z-index: 7;}
+/* absolute를 주면 width auto가 사라져서 width를 따로 줘야함! */
+header h1{float: left; margin: 1.2rem 0 0 1.5rem;}
+header nav{width: 55vw; height: 100%; float: left; margin-left: 7vw;}
+
+header nav > ul{display: flex; justify-content: space-between; height: 100%;}
+header nav > ul > li{flex: 1; position: relative;}
+
+header nav > ul > li:before{content: ""; position: absolute; left: 50%; top: 70%; width: 5px; height: 5px; border-radius: 50%; background: #fff; transition: .2s; transform: translateX(-50%); transition-delay: 0.2s;}
+header nav > ul > li:hover::before{top: 91%; opacity: 0; transition-delay: 0s;}
+
+header nav > ul > li::after{content: ""; position: absolute; left: 50%; top: 99%; width: 0px; height: 3px; background: #fff; transition: .2s; transform: translateX(-50%);}
+header nav > ul > li:hover::after{width: 70%; transition-delay: 0.2s;}
+
+header nav > ul > li > a{display: block; color: #fff; height: 100%; display: flex; justify-content: center; align-items: center; font-size: 1rem; font-weight: 500;}
+
+
+
+header nav > ul > li .lnb{position: absolute; z-index: 8; width: 40rem; text-align: center; padding: 1rem 0; display: none;}
+header nav > ul > li .lnb li{height: 3rem; float: left; line-height: 3rem; position: relative; top: -2.5rem; transition: .3s;}
+header nav > ul > li .lnb li a{padding: 0.5rem 1rem; color: #fff;}
+header nav > ul > li .lnb li:hover a{color: #8cc65f;}
+
+header nav > ul > li:nth-child(4) .lnb{left: -150px;}
+header nav > ul > li:nth-child(5) .lnb{left: -130px;}
+header nav > ul > li:nth-child(6) .lnb{left: -420px;}
+
+header nav > ul > li .lnb li:nth-child(1){transition-delay: 0s;}
+header nav > ul > li .lnb li:nth-child(2){transition-delay: 0.05s;}
+header nav > ul > li .lnb li:nth-child(3){transition-delay: 0.1s;}
+header nav > ul > li .lnb li:nth-child(4){transition-delay: 0.15s;}
+
+
+
+header .nav_bg{position: absolute; top: 0; width: 100%; height: 0px; left: 0; background: rgba(0,0,0,0.5); z-index: -1; transition: .3s;}
+
+
+
+
+
+header .btn{margin: 2rem 2rem 0 0; float: right; font-size: 0;}
+header .btn a{padding: 0.4rem 1rem; font-size: 0.75rem; border-right: 1px solid #222; background: #fff;}
+header .btn a:last-child{border: 0;}
+header .btn a:hover{background: #8cc65f; color: #fff;}
+
+
+
+#visual{height: 100vh; position: relative; border-bottom-right-radius: 6rem; overflow: hidden;}
+#visual .text_box{position: absolute; width: 34rem; height: 13rem; top: 45%; left: 20%; z-index: 5; transition: 1s;}
+#visual .text_box strong{font-size: 4rem; color: #fff; margin-bottom: 4%; display: block; font-weight: 600;}
+#visual .text_box p{font-size: 1.2rem; color: #fff;}
+#visual .swiper-slide .text_box.on{top: 35%;}
+
+
+#visual .swiper{width: 100%; height: 100%;}
+#visual .swiper-slide{background-position: center; background-size: cover;}
+#visual .swiper-slide img{display: block; position: relative; left: 50%; transform: translateX(-50%);}
+/* 반응형으로 브라우저 사이즈가 줄때 슬라이더 버튼 위치가 같이 움직이게 하기 위해서! */
+#visual .swiper-pagination-bullet-active{background: #fff;}
+#visual .swiper-button-next, #visual .swiper-button-prev{color: #fff; top: 45%;}
+
+
+
+
+
+#section1{width: 100%; height: auto; position: relative; padding: 5rem 20px;}
+#section1 .center1115 {overflow: hidden; height: auto; padding-bottom: 5rem;}
+#section1 .bg1{position: absolute; top: 0; left: 0; z-index: -1;}
+#section1 .bg2{position: absolute; right: 0; top: 6rem; z-index: -1;}
+#section1 h2{font-size: 2rem; text-align: center; margin-bottom: 1rem; font-family: 'Cafe24SsurroundAir';}
+#section1 .icon{text-align: center; display: block; margin-bottom: 5.5rem;}
+
+
+#section1 .swiper {width: 100%; height: auto; overflow: visible;}
+#section1 .swiper-slide {text-align: center; display: flex;justify-content: center; align-items: center; transition: .3s; }
+#section1 .swiper-slide.on {transform:scale(1.2); z-index:7; box-shadow: 0px 0px 30px rgba(0,0,0,0.1)}
+
+#section1 .swiper-slide figure{position: relative; font-size: 0;}
+#section1 .swiper-slide figure img {width: 100%;}
+
+#section1 .swiper-slide p{position: absolute; font-size: 0.9rem; color: #fff; bottom: 3rem; right: 1rem;}
+#section1 .swiper-slide h3{position: absolute; font-size: 1.5rem; color: #fff; bottom: 1rem; right: 1rem;}
+
+
+
+
+
+
+#section2{padding: 5rem 20px; background: url(../images/section2_bg.jpg); position: relative; background-attachment: fixed; height: auto;}
+#section2 .left_box{width: 50%; float: left;}
+#section2 .left_box h2{font-size: 1.8rem; color: #fff; margin-bottom: 3.5rem; font-weight: 500;}
+#section2 .left_box ul{width: auto}
+#section2 .left_box ul li{margin-bottom: 3rem;}
+
+#section2 .left_box ul li .icon{width: 3rem; float: left; margin-right: 2rem; text-align: center;}
+#section2 .left_box ul li .icon img{width: 100%;}
+#section2 .left_box ul li em{font-style: normal; color: #fff; font-size: 0.9rem;}
+#section2 .left_box ul li p{font-size: 0.8rem; color: #fff; margin-top: 0.7rem;}
+
+#section2 .right_box{width: 57%; background: url(../images/section2_right.png) no-repeat; position: absolute; height: calc(100% - 2.5rem); right: 0; top: 2.5rem;}
+
+#section2 .right_box h2{font-size: 1.8rem; font-weight: 500; margin: 2.5rem 0 3.5rem 15rem;}
+
+#section2 .right_box ul{width: auto; margin-left: 15rem; padding-right: 20px;}
+
+#section2 .right_box li{margin-bottom: 1rem; height: auto}
+
+#section2 .right_box li h3{font-size: 0.9rem; font-weight: 500; margin-bottom: 0.3rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+#section2 .right_box li span.date{font-size: 0.7rem; color: #333;}
+#section2 .right_box li p{font-size: 0.8rem; margin-top: 1rem; word-break: keep-all; margin-bottom: 3rem;}
+
+
+
+
+#section3{width: 100%; height: auto; background: url(../images/section3_bg.jpg) no-repeat; background-size: cover; border-bottom-right-radius: 6rem; padding: 5rem 20px;}
+#section3 h2{font-size: 2rem; text-align: center; margin-bottom: 1rem; font-family: 'Cafe24SsurroundAir';}
+#section3 .icon{text-align: center; display: block; padding-bottom: 3.5rem;}
+
+#section3 ul{width: 100%;}
+#section3 ul li{width: calc((100% - 3rem) / 4); background: #fff; float: left; margin-right: 1rem; height: auto;}
+#section3 ul li:last-child{margin-right: 0;}
+#section3 ul li figure img{width: 100%;}
+
+#section3 ul li h3{font-size: 0.9rem; margin: 0.7rem 0 0.9rem 1rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+#section3 ul li p{font-size: 0.7rem; color: #777; margin: 0 0 1rem 1rem;}
+#section3 ul li span{font-size: 0.7rem; color: #777; margin: 0 0.7rem 1rem 1rem;}
+#section3 ul li strong{font-size: 0.9rem; color: #da291c; margin-bottom: 1rem; display: inline-block;}
+
+
+
+
+.scroll_menu{width: 100px; position: absolute; right: 2rem; z-index: 7; top: 480px; text-align: right;}
+.scroll_menu a{color: #fff; font-size: 14px; display: block; margin-bottom: 1.5rem; position: relative;}
+.scroll_menu a.on,
+.scroll_menu.on a.on{color: #da291c; font-weight: 600;}
+
+.scroll_menu a.on::before,
+.scroll_menu.on a.on::before{content: ""; position: absolute; width: 6px; height: 1px; background: #da291c; top: 0.4rem; right: -1rem;}
+
+.scroll_menu a.gotop{font-size: 0; color: transparent; width: 68px; height: 27px; background: #fff url(../images/arrow_b.png) center no-repeat; display: none; position: absolute; right: 0;}
+
+.scroll_menu.on a{color: #000;}
+.scroll_menu.on a.gotop{background: #000 url(../images/arrow_w.png) center no-repeat;}
+
+
+footer{height: auto; padding: 2rem 20px 0 20px}
+footer h1{width: 11rem; height: 2.5rem; float: left; margin-right: 1.5rem;}
+footer ul{width: 43rem; height: 2.5rem; float: left; text-align: center;}
+
+
+footer ul li{float: left;}
+footer ul li:nth-child(3) a{font-weight: 700;}
+footer ul li a{line-height: 2.5rem; height: 100%; font-size: 0.8rem; padding: 0 1rem; display: block;}
+
+footer .address{float: left; margin-top: 2rem; font-size: 0.8rem; line-height: 1.5rem; width: 30rem;}
+footer .address span{display: inline-block; margin-top: 0.5rem; margin-right: 1rem;}
+footer .address p{padding-bottom: 2rem; margin-top: 0.5rem;}
+
+footer .family{float: right; margin-top: 2rem; font-size: 0.9rem;}
+footer .family i{margin-left: 0.5rem;}
+
+
+
+/* subpage */
+
+#visual_sub{width: 100%; height: 450px; background: url(../images/visual_sub.jpg) center; background-size: cover;  border-bottom-right-radius: 6rem; overflow: hidden;}
+#visual_sub .text_box{width: 360px; height: 100px; position: absolute; left: 50%; top: 200px; transform: translateX(-50%); text-align: center;}
+
+#visual_sub .text_box strong{font-size: 1.8rem; color: #fff; font-weight: 400;}
+#visual_sub .text_box p{color: #ddd; margin-top: 0.5rem; font-size: 0.9rem;}
+
+#section_sub .title .center1115{padding: 0 20px;}
+#section_sub .title .tit_box{width: 10rem; height: 10rem; background: #e9bf00; text-align: center; line-height: 10rem; position: relative; top: -5rem; color: #fff; font-size: 1.5rem; float: left; margin-right: 4.5rem;}
+
+
+#section_sub .title nav{width: 100%; height: auto;}
+#section_sub .title nav .snb{margin: 0 auto; display: flex; justify-content: center;}
+#section_sub .title nav .snb li{height: 3rem; line-height: 3rem; flex: 1 1 auto; text-align: center; font-size: 0.9rem;}
+#section_sub .title nav .snb li a{display: block;}
+#section_sub .title nav .snb li.on{font-weight: bold; border-bottom: 2px solid #e9bf00;}
+
+
+
+
+#sub01{width: 100%; height: auto; padding: 0 20px;}
+
+#sub01 .info_wrap{position: absolute; z-index: 4;}
+#sub01 .info_wrap h2{font-size: 1.8rem; line-height: 2.4rem; font-family: 'Nanum Myeongjo', serif; font-weight: normal; }
+#sub01 .info_wrap span.line{width: 50px; height: 1px; background: #999; display: block; margin: 2.5rem 0;}
+
+
+#sub01 .swiper {width: 100%; height: auto; padding-bottom: 4rem;}
+#sub01 .swiper-slide {text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;}
+
+
+#sub01 .swiper-slide .text_box{width: 48%; text-align: left; margin-top: 10rem; margin-right: 1rem;}
+#sub01 .swiper-slide .text_box strong{display: block; font-size: 1.5rem; color: #e9bf00; font-weight: 500;}
+#sub01 .swiper-slide .text_box p{font-size: 0.8rem; color: #787878; line-height: 1.5rem; word-break: keep-all; padding-top: 1rem; display: block; height: 11rem;}
+
+
+#sub01 .swiper-slide figure{width: 50%; border-bottom-right-radius: 5rem; overflow: hidden;}
+#sub01 .swiper-slide figure img {width: 100%;}
+
+
+#sub01 .swiper_btns {width: 100px; position: relative;}
+#sub01 .swiper-button-next, #sub01 .swiper-button-prev{color: #666; text-align: center; display: block; position: absolute; margin-top: 0; z-index: 22;}
+#sub01 .swiper-button-next{right: 0;}
+#sub01 .swiper-button-prev{left: 0;}
+
+#sub01 .swiper-button-next:after,
+#sub01 .swiper-button-prev:after{font-size: 1rem}
+
+#sub01 .swiper-pagination-fraction{width: 100%; font-size: 0.8rem; bottom: auto; top: 1px;}
+
+#sub02{padding: 5rem 20px;}
+#sub02 .title h2{font-size: 1.8rem; font-weight: 500;}
+#sub02 .title p{font-size: 1.2rem; color: #999; margin: 0.5rem 0 2rem;}
+
+#sub02 .cont{width: 100%;}
+#sub02 .cont li{width: calc((100% - 3rem) / 4); float: left; margin-right: 1rem; position: relative;}
+#sub02 .cont li:last-child{margin-right: 0;}
+
+#sub02 .cont li figure{width: 100%; height: auto;}
+#sub02 .cont li figure img{width: 100%;}
+
+#sub02 .cont li .text_box{position: absolute; bottom: 1rem; padding: 0 0.5rem 0;}
+#sub02 .cont li .text_box strong{font-weight: 600; color: #fff; font-size: 0.9rem; display: block; margin-bottom: 0.5rem;}
+#sub02 .cont li .text_box span{color: #fff; font-size: 0.8rem; word-break: keep-all;}
+
+#sub03{padding: 5rem 0; padding: 0 20px;}
+#sub03 .title h2{font-size: 1.8rem; font-weight: 500;}
+#sub03 .title p{font-size: 1.2rem; color: #999; margin: 0.5rem 0 2rem;}
+
+#sub03 ul{width: 100%; }
+#sub03 ul li{width: calc((100% - 3rem) / 4); background: #f7f7f7; float: left; margin-right: 1rem; height: auto;}
+#sub03 ul li:last-child{margin-right: 0;}
+#sub03 ul li figure img{width: 100%;}
+
+#sub03 ul li h3{font-size: 0.9rem; margin: 0.7rem 0 0.9rem 1rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+#sub03 ul li p{font-size: 0.7rem; color: #777; margin: 0 0 1rem 1rem;}
+#sub03 ul li span{font-size: 0.7rem; color: #777; margin: 0 0.7rem 1rem 1rem;}
+#sub03 ul li strong{font-size: 0.9rem; color: #da291c; margin-bottom: 1rem; display: inline-block;}
+
+
+#sub04{padding: 5rem 0 3rem 0;}
+#sub04 .title h2{font-size: 1.8rem; font-weight: 500; margin-bottom: 2rem; padding: 0 20px;}
+
+
+
+@media (max-width:1108px) {
+    #visual .text_box{width: auto; left: 10%;}
+    footer ul{width: 100%;}
+    #section2 .right_box h2{margin-left: 10rem;}
+    #section2 .right_box ul{margin-left: 10rem;}
+    #section_sub .title .tit_box{margin-right: 1rem;}
+    #section3 ul li strong{margin-left: 1rem;}
+    #sub01 .swiper-slide .text_box p{height: 15rem;}
+    #sub03 ul li span{display: block;}
+    #sub03 ul li strong{margin-left: 1rem;}
+    #section2 .right_box{width: 65%;}
+}
+

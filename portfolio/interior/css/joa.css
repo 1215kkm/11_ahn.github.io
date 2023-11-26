@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(font.css);
+
+body{overflow-x: hidden;}
+.swiper { width: 100%; height: 100%; } 
+
+ .swiper-slide { text-align: center; font-size: 18px; background: #fff;
+ /* Center slide text vertically */
+ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; } 
+
+ .swiper-slide img { display: block; width: 100%; height: 100%; object-fit: cover; } 
+
+
+
+header { width: 100%; height: 90px; background: #fff; position: absolute; top: 0; left: 0; z-index: 777; } 
+header h1 { width: 260px; height: 90px; float: left; margin-left: 70px; } 
+header nav { height: 90px; float: left; margin: 0 0 0 12vw; } 
+header nav > ul > li { float: left; height: 90px; line-height: 90px; font-size: 18px; position: relative; } 
+header nav > ul > li > a { display: block; padding: 0 3vw; } 
+
+header nav ul li .lnb { position: absolute; width: 100%; text-align: center; font-size: 17px; background: #f69d1c; padding: 15px 0; z-index: 2; display: none; } 
+header nav ul li .lnb li { height: 45px; line-height: 45px; } 
+header nav ul li .lnb li a { display: block; color: #fff; } 
+
+header nav .lnb_bg { position: absolute; width: 100%; height: 230px; background: #f69d1c; top: 90px; left: 0; display: none; } 
+header nav .lnb_bg:after { content: ""; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 6px solid #f69d1c; position: absolute; top: 212px; left: 50%; transform: translateX(-50%); } 
+
+
+
+header nav > ul > li:hover a { color: #f69d1c; } 
+header nav ul li .lnb li:hover a { color: #8e8e8e; } 
+
+header a.search { width: 50px; height: 50px; float: right; margin: 20px 83px 0 0; font-size: 22px; text-align: center; line-height: 50px; } 
+
+
+
+
+
+#search { position: fixed; width: 100%; height: 100vh; z-index: 7; background: rgba(0,0,0,0.8); display: none; top: 0;} 
+#search form { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 550px; height: 350px; } 
+
+#search form input { width: 480px; height: 80px; border-radius: 50px; text-align: center; font-size: 18px; } 
+#search form input::placeholder { letter-spacing: 1.5em; } 
+
+#search form button { width: 80px; height: 80px; position: absolute; right: 0; border-radius: 50%; background: #f69d1c; font-size: 26px; color: #8e8e8e; cursor: pointer; } 
+#search p { font-size: 36px; color: #fff; font-weight: bold; width: 100%; margin: 30px 0; text-align: center; } 
+
+
+#search form a.btn_close { display: block; width: 44px; height: 44px; margin: 0 auto; position: relative; } 
+#search form a.btn_close:before,
+#search form a.btn_close:after { content: ""; width: 100%; height: 2px; background: #fff; position: absolute; top: 50%; } 
+#search form a.btn_close:before { transform: rotate(45deg); } 
+#search form a.btn_close:after { transform: rotate(-45deg); } 
+
+
+
+#visual { width: 100%; height: 100vh;}
+#visual .swiper-slide{position: relative;}
+#visual .swiper-slide .text_box{position: absolute; width: 500px; height: 300px; text-align: center; left: 50%; top: 50%; transform: translate(-50%, -50%);} 
+#visual .swiper-slide .text_box p{font-size: 36px; color: #fff;}
+#visual .swiper-slide .text_box em{font-style: normal; font-size: 70px; font-weight: bold; color: #fff;}
+
+#visual .swiper-pagination{bottom: 30px;}
+#visual .swiper-pagination-bullet{background: #f69d1c;}
+
+
+#section_box h2{font-size: 65px; color: #111111; text-align: center; margin-bottom: 70px;}
+#section_box h2 strong{color: #9aaca8;}
+#section_box h2 span{font-size: 18px; display: block; color: #8e8e8e; font-weight: lighter; margin-top: 15px;}
+
+#section_box article{max-width: 1260px; margin: 0 auto; position: relative;}
+
+#section_box section{padding-top: 150px; padding-bottom: 150px;}
+
+
+
+#section1 article li{width: 32%; height: 210px; border-radius: 10px; box-shadow: 0 0 25px rgba(0,0,0,0.1); float: left; overflow: hidden; position: relative; margin-right: 2%; margin-bottom: 2%;}
+/* width를 퍼센트로 만드는 법: 자기 크기 / 부모크기 = % */
+#section1 article li:nth-child(3n){margin-right: 0;}
+
+#section1 article li a span{font-size: 18px; background: #ffb343; display: inline-block; color: #fff; padding: 0.3em 1em; border-radius: 20px; position: absolute; top: 5px; left: 5px; line-height: 18px;}
+
+
+
+
+
+
+
+
+#section2 {background: #e9e6df;}
+#section2 .tit{max-width: 1260px; height: 20px; margin: 0 auto; text-align: right; font-size: 0; margin-bottom: 15px;}
+#section2 .tit > li{width: 70px; font-size: 18px; text-align: center; display: inline-block; line-height: 18px; padding: 0 30px; cursor: pointer; position: relative;}
+#section2 .tit > li:after{content: ""; width: 70px; height: 3px; background: #9aaca8; position: absolute; left: 50%; transform: translateX(-50%); bottom: -5px; transition: .3s; opacity: 0;}
+#section2 .tit > li:hover:after{opacity: 1;}
+
+
+
+#section2 article {height: 365px;}
+#section2 article ul{width: 100%; position: absolute;}
+#section2 article ul li{width: 48%; height: 365px; float: left; border-radius: 10px; overflow: hidden;}
+#section2 article ul li:nth-child(2){float: right;}  
+
+#section2 article .na,
+#section2 article .cl,
+#section2 article .vi{display: none;}
+
+
+
+
+
+
+
+
+
+
+#section3 article > div{float: left; width: 48%; height: 550px;}
+#section3 article > div.board_sns{float: right;}
+
+#section3 article > div h3{font-size: 24px; padding: 0.3em 1em; border-radius: 50px; background: #ffb343; color: #fff; display: inline-block; font-weight: normal; margin-left: 20px;}
+#section3 article > div ul{border: 1px solid #8e8e8e; border-radius: 10px; padding: 60px 55px; margin-top: -20px; height: 500px; box-sizing: border-box;}
+#section3 article .board_ask{float: right;}
+
+#section3 article > .board_notice ul li:first-child{border-bottom: 1px solid #c6c6c6; margin-bottom: 36px;}
+#section3 .board_notice li strong{font-size: 18px; font-weight: 600; height: 2.5em; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+/* overflow: hidden; text-overflow: ellipsis; white-space: nowrap; : 한줄 이상 말줄임하는 법 */
+/* strong, span 태그는 displat block을 해야 높이가 생김 */
+#section3 .board_notice li p{font-size: 17px; color: #6c6c6c; padding-bottom: 2.35em;}
+#section3 .board_notice li span.date{font-size: 15px; color: #323232; height: 3.33em; display: block;}
+
+
+
+.input_box li{width: 500px; height: 40px; border: 1px solid #c6c6c6; border-radius: 10px; margin-bottom: 10px;}
+.input_box li label{width: 90px; height: 40px; float: left; text-align: center; line-height: 40px; font-size: 18px; font-weight: 600;}
+.input_box li input{float: left; font-size: 15px; color: #323232; height: 40px; text-indent: 10px; width: 400px;}
+
+.input_box .content{height: 200px;}
+.input_box .content textarea{width: 400px; height: 180px; margin-top: 9px; text-indent: 10px; font-size: 16px; font-family: Pretendard; letter-spacing: 1px;}
+.input_box .content textarea::placeholder{color: #757575;}
+
+
+
+.board_ask button{height: 40px; text-align: center; padding: 0 30px; border-radius: 100px; color: #fff; background: #ffb343; font-size: 18px; cursor: pointer; float: right; line-height: 18px;}
+
+
+
+.call{width: 70px; height: 70px; background: #748815; position: fixed; right: 0; top: 50%; transform: translateY(-50%); text-align: center; z-index: 8; transition: .3s; overflow: hidden; cursor: pointer;}
+.call i{color: #fffef1; font-size: 44px; display: block; margin-top: 13px; transition: .3s;}
+.call p{color: #fff; font-size: 18px; margin-top: 20px; margin-bottom: 10px; opacity: 0; visibility: hidden; transition: .3s;}
+.call a{font-size: 30px; color: #fff; font-weight: bold; opacity: 0; visibility: hidden; transition: .3s;}
+
+.call.on{width: 300px; height: 200px;}
+.call.on i{margin-top: 25px;}
+.call.on p{opacity: 1; visibility: visible;}
+.call.on a{opacity: 1; visibility: visible;}
+/* display none - display block 으로 해도 됨 */
+
+
+
+
+
+
+footer { width: 100%; height: 150px; background: #f69d1c;} 
+footer h1{float: left; width: 175px; height: 42px; margin: 40px 0 0 27px;}
+footer address{float: left; width: 500px; margin: 37px 0 0 140px; font-style: normal; line-height: 1.7em; color: #ffdeb2;}
+footer .sns_box{width: 300px; height: 60px; float: right; margin-top: 42px; text-align: right;}
+footer .sns_box a img{width: 60px; height: 60px; border-radius: 13px; overflow: hidden; margin-left: 10px;}
+
+
+
+
+/* sub01-01 */
+
+header.sub{position: relative;}
+ 
+#visual_sub{width: 100%; height: 230px; background: url(../images/visual_sub.jpg) center; background-size: cover;}
+#visual_sub .text_box{color: #fff; font-size: 42px; text-align: center; position: relative; top: 90px;}
+
+#section_box_sub{padding-bottom: 200px;}
+#section_box_sub nav{height: 90px; border-bottom: 1px solid #ccc; position: relative;}
+#section_box_sub nav ul{height: 100%; max-width: 1260px; margin: 0 auto; display: flex; align-items: flex-end; justify-content: center;}
+#section_box_sub nav ul li{height: 65px; font-size: 20px; line-height: 65px; text-align: center;
+    flex-grow: 1; 
+    /* 남은 공간 다같이 사이좋게 나눠쓰기 (min-width와 같음)*/
+    flex-shrink: 1; 
+    /* 0과 1이 있는데, 1은 flex-basis보다 작아질 수 있음(max-width와 같음)  */
+    flex-basis: 150px; /* 기본 크기 */
+    /* flex: 1 = flex-grow:1, flex-shrink:1, flex-basis:0 을 줄여쓴거고
+    flex: 1 1 150px 은 순서대로 줄여쓴거*/
+}
+
+/* 
+정렬-  display: flex; align-items: flex-end; justify-content: center; 
+반응형- flex-wrap:wrap / flex: 1 1 auto
+*/
+
+
+#section_box_sub nav ul li a{display: block;}
+#section_box_sub nav ul li.on a{color: #f69d1c;}
+#section_box_sub nav ul li:hover a{color: #f69d1c;}
+
+#section_box_sub nav span.underline{width: 180px; height: 1px; background: #f69d1c; position: absolute; bottom: -1px; left: 0; transition: .2s;}
+
+
+
+
+#section_box_sub .content_box{max-width: 1260px; margin: 0 auto; text-align: center; margin-top: 90px;}
+#section_box_sub .content_box > h2{font-size: 42px; color: #f69d1c; font-weight: 600; margin-bottom: 80px;}
+#section_box_sub .content_box > h2 > span{font-size: 17px; color: #ccc; font-weight: 200; letter-spacing: 0.1em; display: block; margin-top: 10px;}
+
+#section_box_sub article{display: flex; justify-content: space-between;}
+#section_box_sub article figure{width: 590px; height: 590px; overflow: hidden; border-radius: 10px;}
+#section_box_sub article .content{width: 570px; height: 470px; text-align: left;}
+
+
+#section_box_sub article .content strong{font-size: 30px; display: block; margin-bottom: 30px; margin-top: 85px; font-weight: 500;}
+#section_box_sub article .content p{font-size: 18px; line-height: 30px; color: #666; margin-bottom: 20px; word-break: keep-all;}
+
+
+
+/* sub01-02 */
+#section_box_sub .content_box .interior strong{margin-top: 70px;}
+#section_box_sub .content2{max-width: 1260px; margin: 0 auto; text-align: center; margin-top: 200px;}
+#section_box_sub .content2 h3{font-size: 36px; font-weight: 500; margin-bottom: 80px;}
+#section_box_sub .content2 h3 span{color: #9aaca8;}
+#section_box_sub .content2 ul{max-width: 1260px; margin: 0 auto; display: flex; justify-content: space-between;}
+#section_box_sub .content2 ul li{position: relative;}
+#section_box_sub .content2 ul li figure{width: 350px; height: 350px; border-radius: 10px; overflow: hidden; margin-bottom: 80px;}
+#section_box_sub .content2 ul li figure::before{content: ""; width: 5px; height: 70px; background: #f69d1c; position: absolute; left: 50%; top: 330px; transform: translateX(-50%);}
+
+
+
+
+#section_box_sub .content2 ul li strong{font-size: 30px; display: block; margin-bottom: 30px; font-weight: 500;}
+#section_box_sub .content2 ul li p{font-size: 18px; line-height: 30px; color: #666;} 
+
+
+
+/* sub01-03 */
+
+.wrap_controllers{display: none;}
+
+.root_daum_roughmap_landing .border1,
+.root_daum_roughmap_landing .border3,
+.root_daum_roughmap_landing .border4{display: none;}
+
+.root_daum_roughmap{border: 1px solid #ccc; box-shadow: -30px 30px #f69d1c;}
+
+#section_box_sub .map_box{display: block;}
+#section_box_sub .map_box .map_info{margin-top: 100px;}
+#section_box_sub .map_box .map_list{text-align: left;}
+
+#section_box_sub .map_box .map_list li{float: left; padding: 0 210px 0 0;}
+#section_box_sub .map_box .map_list li span{font-size: 50px; height: 70px; line-height: 70px; float: left;}
+#section_box_sub .map_box .map_list li strong{font-size: 30px; margin-left: 80px; line-height: 30px; font-weight: 500; display: block; margin-bottom: 10px;} 
+#section_box_sub .map_box .map_list li p{font-size: 25px; display: block; margin-left: 80px; color: #666;}
+
+#section_box_sub .map_info a{font-size: 18px; background: #f69d1c; padding: 15px 40px; border-radius: 10px; position: relative; top: 20px; color: #fff;}
+
+
+
+
+/* 
+#section_box_sub article .content strong{font-size: 30px; display: block; margin-bottom: 30px; margin-top: 85px; font-weight: 500;}
+#section_box_sub article .content p{font-size: 18px; line-height: 30px; color: #666; margin-bottom: 20px; word-break: keep-all;} */
+
+
+
+
+
+/* 반응형 만드는 방법 (나중에 다시 배울 예정...!!)*/
+@media screen and (max-width:1416px) { header h1 { margin-left: 30px; } 
+ header nav { margin: 0 0 0 5vw; } 
+ header nav > ul > li > a { display: block; padding: 0 2vw; } 
+ }
+
+@media screen and (max-width:796px){
+    .call{width: 100%; height: 70px; right: 0; top:auto; transform: translateY(0); bottom: 0;}
+    #section2 .tit li{width: 60px; font-size: 17px; display: inline-block; line-height: 17px;}
+}

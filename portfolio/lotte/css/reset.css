@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* Reset */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: #333;}
+li{list-style: none;}
+input, img, fieldset, button, textarea{outline: 0; border: 0;}
+legend, caption{font-size: 0; color: transparent; text-indent: -9999px; position: absolute; left: -9999px; height: 0; overflow: hidden; width: 0; height: 0; visibility: hidden;}
+table{border-collapse: collapse;}
+
+.autoHeight:after{content: ""; display: block; clear: both;}
+.cb_1200{width: 1200px;}
+.cb_1260{width: 1260px;}
+.cb_1300{width: 1300px;}
+.cb_1400{width: 1400px;}
+.cb_1500{width: 1500px;}
+.cb_1600{width: 1600px;}
+.ma_c{margin: 0 auto;}

@@ -1,0 +1,114 @@
+.cb_1200{width: 100%;}
+header{height: 100px; height: 50px;}
+header .cb_1200{padding-top: 0;}
+header h1{width: 140px; height: 30px;}
+header nav{display: none;}
+
+header .lang_sel{display: none;}
+header .logomenu{top: 7px; width: 100%;}
+header .logomenu .search{position: absolute; left: 0;}
+
+#visual{border-radius: 0;}
+#visual .swiper-button-next,
+#visual .swiper-button-prev,
+#visual .autoplay-progress{display: none;}
+
+#section1{border-radius: 0;}
+#section1 .cb_1200{padding: 0;}
+#section1 h2{width: 20%; font-size: 15px;}
+#section1 .notice_box{width: 80%; float: left; padding-left: 20px;}
+#section1 .swiper-slide{font-size: 16px;}
+
+#section_box #section2,
+#section_box #section3,
+#section_box #section4,
+#section_box #section5{padding: 50px 0;}
+
+#section2 h2{font-size: 25px; margin-bottom: 25px;}
+#section2 .business li{width: calc((100% - 20px) / 2); margin-bottom: 20px; height: auto; font-size: 0;}
+#section2 .business li img{width: 100%;}
+#section2 .business li:nth-child(2n){margin-right: 0;}
+#section2 .business li a.back{font-size: 20px;}
+
+#section3{height: auto;}
+#section3 h2{font-size: 25px; margin-bottom: 25px;}
+
+
+#section3 .background{height: auto;}
+#section3 .background p{font-size: 16px; width: 100%; word-break: keep-all; left: 0; top: 0; padding: 20px; margin: 0;}
+#section3 .background p br{display: none;}
+
+#section3 .background ul{width: 100%; margin: 0; flex-wrap: wrap; padding: 20px; border-bottom-right-radius: 0px; gap: 10px; }
+
+@media screen and (max-width:480px){
+    #section3 .background ul{column-gap:70px;}
+}
+@media screen and (max-width:370px){
+    #section3 .background ul{column-gap:30px;}
+}
+
+
+#section3 .background ul li{flex-grow: 1; margin-bottom: 20px}
+#section3 .background ul li a h3{font-size: 15px; margin-top: 5px;}
+#section3 .background ul li a figure{height: auto; width: 50px; height: 50px;}
+
+
+
+
+
+#section4{margin-top: 0;}
+#section4 .cb_1200{display: block;}
+#section4 a.ir{width: 100%; display: block; height: 80px; font-size: 16px; line-height: 80px; margin-bottom: 10px;}
+#section4 a.stock{width: 100%; display: block; padding: 0; height: 80px; line-height: 80px;}
+#section4 a.stock p{font-size: 13px; margin-right: 10px;}
+#section4 a.stock h3{font-size: 19px; margin-right: 10px;}
+#section4 a.stock span{font-size: 13px;}
+
+
+
+
+#section5 h2{font-size: 25px; margin-bottom: 25px;}
+#section5 ul{display: inline-block;}
+#section5 ul li{width: 100%; height: auto; border-radius: 20px !important; position: relative; margin: 0 10px 10px 0;}
+#section5 ul li:nth-child(1){float: left; min-height: 100px; width: calc((100% - 10px) / 2);}
+#section5 ul li:nth-child(2){float: right; background-image: none; min-height: 100px; margin-right: 0; width: calc((100% - 10px) / 2);}
+#section5 ul li:nth-child(3){float: left; margin-right: 0;}
+#section5 ul li:nth-child(4){float: left; margin-right: 0; display: none;}
+#section5  ul > li > a{padding: 15px;}
+#section5 ul li h3{font-size: 17px; width: 100%; }
+#section5 ul li p{font-size: 14px; padding: 5px 10px; position: static;float: right; margin-top: 8px; margin-bottom: 8px;}
+#section5 ul li a.back{width: 100%; float: none;}
+#section5 ul li figure{display: none;}
+
+#section5 ul li.new .title{margin-top: 15px; width: 100%; text-align: left; padding: 0 20px;}
+#section5 ul li.new .title h3{font-size: 18px; }
+#section5 ul li.new .title span{font-size: 17px;}
+#section5 ul li.new .content{width: 100%; margin-top: 20px; padding: 0 20px;}
+#section5 ul li.new .content a{margin-bottom: 10px;}
+#section5 ul li.new .content p{display: inline-block; position: static;} 
+
+
+
+.insta .swiper-slide{height: 240px;}
+
+
+
+
+
+
+
+
+
+footer{padding: 10px 20px; height: auto;}
+footer h1{width: 140px; margin: 20px 0;}
+footer .address{width: 100%; height: auto;}
+footer .address li{margin-right: 20px; font-size: 15px;}
+footer .address li:last-child{margin-top: 0px;}
+
+footer .button_box{width: 100%; margin-top: 20px; float: left; font-size: 15px;}
+footer .button_box a{padding-left: 0; padding-right: 22px;}
+
+footer .footer_box{display: none;}
+
+footer .sns_box{float: left; width: 100%; text-align: left; margin-top: 20px;}
+footer .sns_box a{padding-left: 0; padding-right: 20px;}

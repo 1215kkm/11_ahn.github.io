@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/joa.css">
+    <!-- 폰트어썸 불러오는 법-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- aos 애니메이션 가져오는 법 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="joa_top"></div>
+    <div id="search">
+        <form action="">
+            <fieldset>
+                <legend>검색창</legend>
+                <input type="text" placeholder="SEARCH" name="">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </fieldset>
+            <p>궁금하신 점은 무엇이든 <br>검색해보세요</p>
+            <a href="#" class="btn_close"></a>
+        </form>
+    </div>
+    <div id="visual_sub">
+        <div class="text_box">
+            회사소개
+        </div>
+    </div>
+    <div id="section_box_sub">
+        <nav>
+            <ul class="snb">
+                <li><a href="sub01_01.html">인사말</a></li>
+                <li><a href="sub01_02.html">인테리어</a></li>
+                <li><a href="sub01_03.html">오시는 길</a></li>
+            </ul>
+            <span class="underline"></span>
+        </nav>
+        <div class="content_box">
+            <h2>인사말
+                <span>GREETING</span>
+            </h2>
+            <article>
+                <figure><img src="images/greeting_web.jpg" alt=""></figure>
+                <div class="content">
+                    <strong>
+                        더 나은 삶을 위한 공간창조 조아인테리어입니다.
+                    </strong>
+                    <p>내가 살고 싶은 곳 ~~ 그 곳<br>
+                        안녕하세요! 저희 홈페이지에 방문해주셔서 진심으로 감사드립니다.<br>
+                        항상 변함없이 고객들과 인테리어 공사 시작부터 마감 사후 A/S까지<br>
+                        마음 편하게 진행하실 수 있도록 최선을 다하겠습니다. 
+                    </p>
+                    <p>더 많이 노력하고! 더 많이 겸손해지며!<br>
+                        고객님의 작은 소리에도 귀 기울이는 조아인테리어가 되겠습니다.<br>
+                        역시 조아 인테리어는 "아주 조아!"라는 말씀을 늘 들을 수 있는<br>
+                        회사로 성장하겠습니다.
+                    </p>
+                    <p>감사합니다!</p>
+                    <p>- 조아 인테리어 일동 -</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="call">
+        <i class="fa-solid fa-phone"></i>
+        <p>궁금하신 점을 문의주시면 <br>친절하고 빠르게 상담해드립니다.</p>
+        <a href="tel:031-227-3939">031-227-3939</a>
+    </div>
+
+    <div id="joa_bottom"></div>
+
+    <!-- stop는 기능 반복을 멈추기 위한 태그~~ -->
+    <!-- 400은 속도~~ 4초~~~ -->
+    <script src="script/jquery-3.6.3.min.js"></script>
+    <script src="script/action.js"></script>
+
+    <!-- addclass+removeclass = toggleclass -->
+    <!-- .mouseout/.mouseover: 자식한테도 해당
+         .mouseleave/ .mouseenter: 본인한테만 해당 -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+</html> 

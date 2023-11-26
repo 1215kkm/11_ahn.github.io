@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(font.css);
+
+html {font-size: 20px;}
+body {
+  --bgColor:#151514;
+  font-size: 1rem;
+  background: var(--bgColor)
+}
+body, html {height: 100%; width: 100%; margin: 0;}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {background: #fff !important;}
+
+header {width: 65rem; height: 7.5rem; position: absolute; top:0; left: 50%; transform: translateX(-50%); z-index: 3;}
+header h1 {width: 10.55rem; height: 2.8rem; float: left; margin-top: 2.5rem;}
+header nav {width: 45rem; height: 2.3rem; float: right; margin-top: 2.9rem; font-size: 1.1rem;}
+header nav ul {display: flex; height: 100%; justify-content: flex-end;}
+header nav ul li a {color: #fff;  display: block; height: 100%; padding: 0 2rem; display: flex; align-items: center;}
+
+.visual{width: 100%; height: 100vh; max-height: 100%; background: url(../images/visual.jpg) bottom center no-repeat; background-size: cover; position: relative;}
+
+.visual .text_box{width: 40rem; height: 12rem; position: absolute; top: 10rem; left: 20rem;}
+.visual .text_box strong{font-size: 4rem; color: #fff; letter-spacing: 0.3rem;}
+
+.visual .line{width: 100%; height: 12rem; position: absolute; top: 2rem;}
+.visual .line .st0{fill:none;stroke:#CBCBCA;stroke-miterlimit:10;}
+.visual .line svg{stroke-dasharray: 1920px; stroke-dashoffset: -1920px; animation: line 5s infinite linear;}
+@keyframes line {
+  0%{stroke-dashoffset: 1920px;}
+  100%{stroke-dashoffset: -1920px;}
+}
+
+.visual .figure_box{z-index: 3;}
+.visual .figure_box .people{position: absolute; top: 50%; left: 50%; margin-top: -6rem; margin-left: -3rem;}
+.visual .figure_box .rocket{position: absolute; top: 50%; left: 50%; margin-top: -6rem; margin-left: -3rem; margin-left: 9rem; margin-top: -4rem;}
+.visual .figure_box .smartphone{position: absolute; top: 50%; left: 50%; margin-top: -6rem; margin-left: -3rem; margin-left: 15rem; margin-top: -12rem;}
+.section1{width: 100%; background: url(../images/bg_section1.jpg) center no-repeat; background-size: cover; padding: 0 7rem;}
+.section1 .text_box{float: left; width: 100%;}
+.section1 .text_box span{font-size: 1rem; color: #fff; margin-bottom: 1.5rem; display: block;}
+.section1 .text_box figure{display: block; margin-bottom: 2rem;}
+.section1 .text_box p{color: #fff; font-size: 1.4rem;}
+
+.section1 .cont_wrap{width: 100%; height: 8rem; float: left; margin-top: 5rem;}
+.section1 .cont_wrap .overview{color: #cbcbcb; font-size: 4rem; line-height: 8rem; float: left; font-weight: bold; letter-spacing: 0.5rem;}
+.section1 .cont_wrap .cont_box{float: right; display: flex;}
+.section1 .cont_wrap .cont_box li{width: 11.5rem; height: 7.25rem; text-align: center;}
+.section1 .cont_wrap .cont_box li em{font-size: 0.8rem; font-style: normal; color: #15acee; display: block; margin-top: 1rem;}
+.section1 .cont_wrap .cont_box li strong{font-size: 1rem; color: #fff; display: block; margin-top: 1rem;}
+.section1 .cont_wrap .cont_box li strong > span{font-size: 2rem;}
+.section1 .cont_wrap .cont_box li > span{font-size: 0.8rem; margin-top: 1rem; display: block; color: #cbcbcb;}
+
+.section2{width: 100%; height: 100vh; max-height: 100%; text-align: center;}
+.section2 h2{display: inline-block; color: #fff; margin-top: 4rem; font-size: 1.4rem;}
+
+.section2 article{margin-top: 4rem; position: relative;}
+.section2 article .bg_box{position: absolute;}
+.section2 article .bg_box .bg_1{position: relative; left: 165%; top: -3rem;}
+.section2 article .bg_box .bg_2{margin-left: -40rem; margin-top: 2rem;}
+
+.section2 article .figure_box{width: 50rem; height: 32rem; float: left; position: relative;}
+
+.section2 article .figure_box div {overflow: hidden;}
+.section2 article .figure_box div ul {transition: 1s;}
+.section2 article .figure_box li {float: left;}
+.section2 article .figure_box img{width: 100%; vertical-align: top;}
+
+.section2 article .figure_box .monitor{width: 34.2rem; height: 30.2rem; position: absolute; background: url(../images/monitor.png) no-repeat; left: 30%;}
+.section2 article .figure_box .monitor > div{width: 91%; margin: 1.4em 1.8em; }
+
+.section2 article .figure_box .tablet{width: 17.75rem; height: 11.95rem; position: absolute; background: url(../images/tablet.png) no-repeat; bottom: 3rem; left: 4rem;}
+.section2 article .figure_box .tablet > div{width: 82%; margin: 0.4rem 1.6rem;}
+
+
+.section2 article .figure_box .mobile{width: 7.55rem; height: 15.3rem; position: absolute; background: url(../images/mobile.png) no-repeat; bottom: 0.8rem; left: 18rem;}
+.section2 article .figure_box .mobile > div{width: 86%; margin: 1.6rem 0.5rem;}
+
+
+.section2 article .explain_box{width: 14.5rem; text-align: left; float: right; height: 30rem; display: flex; flex-direction: column; justify-content: flex-end; margin-top: -4rem;}
+.section2 article .explain_box .ex{position: absolute; display: none;}
+.section2 article .explain_box .ex:first-child{display: block;}
+
+.section2 article .explain_box strong{font-size: 8.5rem; color: #15acee; position: absolute; top: -11rem; left: -47rem;}
+.section2 article .explain_box p{font-size: 2rem; color: #fff; margin: 0.5rem 0;}
+.section2 article .explain_box span{font-size: 0.9rem; color: #8f8f8f; word-break: keep-all;}
+
+.section2 article a.more{font-size: 0.9rem; background: #15acee; padding: 1rem 1.7rem; display: inline-block; font-weight: bold; color: #fff; margin-top: 1rem; margin-right: 6rem; transition: .2s;}
+.section2 article a.more::after{content: ""; width: 1.5rem; height: 2px; background: #fff; float: right; margin: 0.5rem 0 0 0.6rem;}
+.section2 article a.more:hover{background: #fff; color: #15acee;}
+.section2 article a.more:hover::after{background: #15acee;}
+
+.section2 .btn_box{position: absolute; width: 15rem; z-index: 3; right: 0; top: 13rem;}
+.section2 .btn_box button{position: absolute; cursor: pointer; background: none; padding: 1rem;}
+.section2 .btn_box button.prev{left: 0;}
+.section2 .btn_box button.next{right: 0;}
+
+
+.section3{width: 100%; height: 100vh; max-height: 100%; background: url(../images/bg_section3.jpg) bottom -2rem center no-repeat; background-size: cover; text-align: center;}
+.section3 h2{display: inline-block; color: #fff; margin-top: 4rem; font-size: 1.4rem;}
+
+.section3 article{margin-top: 6rem;}
+.section3 article .cont_box{width: 57rem; height: 29rem; float: left; position: relative; overflow: hidden;}
+.section3 article nav{width: 7rem; float: right; height: 8rem; margin-top: 3.5rem;}
+.section3 article nav li{height: 2.5rem; text-align: right; line-height: 2.5rem;}
+.section3 article nav li a{color: #15acee; padding-right: 0rem; display: block; position: relative;}
+.section3 article nav li.on a,
+.section3 article nav li:hover a{color: #fff;}
+
+.section3 article nav li.on a::before,
+.section3 article nav li:hover a::before{content: ""; position: absolute; width: 1rem; height: 3px; background: #fff; right: -30px; top: 1.1rem;}
+
+.section3 article .cont_box .cont{position: relative; text-align: left; height: 100%;}
+.section3 article .cont_box .text_box{position: absolute; top: 0; left: 0; z-index: 2; height: 100%; transition: 1s;}
+.section3 article .cont_box .text{color: #fff; width: 21rem; display: flex; flex-direction: column; align-items: flex-start; height: 100%; z-index: 2;}
+.section3 article .cont_box .text span{font-size: 0.8rem; display: block; margin-bottom: 1rem; color: #15acee;} 
+.section3 article .cont_box .text strong{font-size: 2rem; margin-bottom: 2rem; display: block; line-height: 2.8rem;}
+.section3 article .cont_box .text p{font-size: 0.9rem; line-height: 1.5rem; flex: 0.8;}
+
+.section3 article .cont_box .text .more{font-size: 0.9rem; background: #15acee; padding: 1rem 1.7rem; display: inline-block; font-weight: bold; color: #fff; transition: .2s;}
+.section3 article .cont_box .text .more::after{content: ""; width: 1.5rem; height: 2px; background: #fff; float: right; margin: 0.5rem 0 0 0.6rem;}
+.section3 article .cont_box .text .more:hover{background: #fff; color: #15acee;}
+.section3 article .cont_box .text .more:hover::after{background: #15acee;}
+
+.section3 article .cont_box .img_box{position: absolute; height: 100%; top: 3rem; right: 2rem; transition: 1s; transition-delay: 0.2s;}
+.section3 article .cont_box figure{position: relative; height: 100%;}
+
+
+
+.section4{width: 100%; height: 100vh; max-height: 100%; padding: 0 4.5rem}
+.section4 .section4_box{width: 100%; height: 37.5rem; background: #f5f5f5; padding: 3.5rem 0;}
+.section4 article .cont_box{width: 100%; height: 27rem; float: left; }
+.section4 article .cont_box .cont{height: 100%; position: relative;}
+.section4 article .cont_box .text{text-align: left; width: 21rem; display: flex; flex-direction: column; align-items: flex-start; height: 100%; position: absolute; z-index: 2;}
+.section4 article .cont_box .text span{font-size: 0.8rem; display: block; margin-bottom: 1rem; color: #15acee;} 
+.section4 article .cont_box .text strong{font-size: 2rem; margin-bottom: 2rem; display: block; line-height: 2.8rem;}
+.section4 article .cont_box .text p{font-size: 0.9rem; line-height: 1.5rem; flex: 0.8; color: #777;}
+.section4 article .cont_box .text p em{font-style: normal; font-size: 1rem; font-weight: 500; color: #000;}
+
+.section4 article .cont_box .text .more{font-size: 0.9rem; background: #15acee; padding: 1rem 1.7rem; display: inline-block; font-weight: bold; color: #fff; transition: .2s;}
+.section4 article .cont_box .text .more::after{content: ""; width: 1.5rem; height: 2px; background: #fff; float: right; margin: 0.5rem 0 0 0.6rem;}
+.section4 article .cont_box .text .more:hover{background: #f5f5f5; color: #15acee;}
+.section4 article .cont_box .text .more:hover::after{background: #15acee;}
+
+
+.section4 article .cont_box .map_direction{width: 38rem; height: 28rem; background: #000; float: right;}
+
+footer{width: 100%; height: auto; padding-bottom: 4rem;}
+footer ul{color: #ccc; font-size: 18px; float: left; width: 230px; margin-right: 300px;}
+footer ul:last-child{margin-right: 0;}
+footer ul li{margin-bottom: 0.5rem;}
+footer ul li a{color: #ccc;}
+
