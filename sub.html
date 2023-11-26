@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5unset's portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="cb_1260 ma_c">
+            <h1><a href="/index.html">Seonjin's portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sub">
+        <div class="cb_1000 ma_c">
+            <div class="intro">
+                <h2></h2>
+                <strong></strong>
+                <!-- span 자리 -->
+                <a href="#" target="_blank">사이트 바로가기</a>
+            </div>
+            <figure><img src="" alt=""></figure>
+            <div class="workinfo">
+                <h2>Work Info</h2>
+                <p class="concept"></p>
+                <span class="color1"></span>
+                <span class="color2"></span>
+                <span class="color3"></span>
+                <span class="color4"></span>
+                <p class="period"></p>
+                <p class="tool"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script/jquery-3.6.3.min.js"></script>
+    <script src="script/action.js"></script>
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script/jquery.easypiechart.js"></script>
+
+
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: "fade",
+            autoHeight: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            // on: {
+            //     slideChangeTransitionEnd: function(){
+            //         console.log(this.activeIndex); // this.activeIndex 에 현재 슬라이드 번호가 들어있습니다
+            //         $('#section2 .swiper-wrapper > div').css({transform:'scale(0.9)'})
+            //         $('#section2 .swiper-wrapper > div').eq(this.activeIndex).css({transform:'scale(1)'})
+            //     },
+            // },
+        });
+    </script>
+</body>
+</html>

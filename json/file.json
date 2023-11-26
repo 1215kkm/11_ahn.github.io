@@ -1,0 +1,137 @@
+[
+    {
+        "web_project" : "제작물들",
+        "info" :
+
+        [
+            {
+                "intro_text_h2" : "Lotte Skyhill CC",
+                "intro_text_strong" : "롯데 스카이힐 리뉴얼",
+                "intro_text_p1" : "#디자인100%",
+                "intro_text_p2" : "#퍼블리싱100%",
+                "intro_text_p3" : "#반응형",
+                "intro_text_p4" : "#제주CC",
+                "site_domain": "http://5unset.kr/05skyhill/",
+                "figure_img" : "images/skyhill.jpg",
+                "workinfo_text_p" : "골프 클럽 업체의 웹사이트를 반응형으로 제작하였습니다. 자연을 느낄 수 있는 골프 클럽의 이미지를 표현하기 위해 그린 컬러와 클럽의 모습을 보여주는 이미지를 사용하여 감각적으로 디자인하고자 하였습니다. 스크롤 애니메이션 효과를 구현하였습니다.",
+                "workinfo_color1" : "#8cc65f",
+                "workinfo_color2" : "#da291c",
+                "workinfo_color3" : "#e9bf00",
+                "workinfo_text_period" : "제작 기간: 2023. 03. 06 ~ 2023. 03. 14",
+                "workinfo_text_tool" : "사용 툴: photoshop, html, css, javascript"
+            },
+            {
+                "intro_text_h2" : "Y Studio",
+                "intro_text_strong" : "와이스튜디오 사이트 리뉴얼",
+                "intro_text_p1" : "#디자인100%",
+                "intro_text_p2" : "#퍼블리싱100%",
+                "intro_text_p3" : "#pc",
+                "intro_text_p4" : "#메인페이지",
+                "site_domain": "http://5unset.kr/04ystudio",
+                "figure_img" : "images/ystudio.jpg",
+                "workinfo_text_p" : "디지털 에이전시의 웹사이트를 제작하였습니다. 귀여운 캐릭터를 활용하여 업체의 이미지를 표현하였습니다. 스크롤 없이 마우스 휠 한번으로 각 섹션으로 슬라이드가 되게끔 구현하였습니다. ",
+                "workinfo_color1" : "#151514",
+                "workinfo_color2" : "#15acee",
+                "workinfo_text_period" : "제작 기간: 2023. 03. 14 ~ 2023. 03. 23",
+                "workinfo_text_tool" : "사용 툴: photoshop, html, css, javascript"
+            },
+            {
+                "intro_text_h2" : "Cjenm",
+                "intro_text_strong" : "cjenm 사이트 리뉴얼",
+                "intro_text_p1" : "#디자인100%",
+                "intro_text_p2" : "#퍼블리싱100%",
+                "intro_text_p3" : "#pc",
+                "intro_text_p4" : "#메인페이지",
+                "intro_text_p5" : "#drama",
+                "intro_text_p6" : "#tvshows",
+                "site_domain": "http://5unset.kr/02cjenm",
+                "figure_img" : "images/cjenm.jpg",
+                "workinfo_text_p" : "글로벌 종합 콘텐츠 기업 cjenm의 웹사이트를 제작하였습니다. 엔터테인먼트 회사의 이미지와 맞게 메인 비주얼을 동영상으로 제작하였습니다. 사용자가 원하는 메뉴를 언제든지 탐색 가능하도록 스크롤이 내려도 메뉴를 볼 수 있게끔 구현하였습니다.",
+                "workinfo_color1" : "#000",
+                "workinfo_color2" : "#ff5a00",
+                "workinfo_text_period" : "제작 기간: 2023. 02. 03 ~ 2023. 02. 10 ",
+                "workinfo_text_tool" : "사용 툴: photoshop, html, css, javascript"
+            },
+            {
+                "intro_text_h2" : "Joa Interior",
+                "intro_text_strong" : "조아 인테리어 사이트 리뉴얼",
+                "intro_text_p1" : "#디자인100%",
+                "intro_text_p2" : "#퍼블리싱100%",
+                "intro_text_p3" : "#pc",
+                "intro_text_p4" : "#메인페이지",
+                "intro_text_p5" : "#인사말",
+                "intro_text_p6" : "#인테리어",
+                "intro_text_p7" : "#오시는길",
+                "site_domain": "http://5unset.kr/01joainterior",
+                "figure_img" : "images/joa.jpg",
+                "workinfo_text_p" : "인테리어 전문업체의 웹사이트를 제작하였습니다. 로고의 색을 활용하여 컨셉 컬러를 설정하고 밝고 따듯한 이미지를 구축하고자 하였습니다.",
+                "workinfo_color1" : "#f69d1c",
+                "workinfo_color2" : "#ffb343",
+                "workinfo_color3" : "#748815",
+                "workinfo_text_period" : "제작 기간: 2023. 01. 26 ~ 2023. 02. 01",
+                "workinfo_text_tool" : "사용 툴: photoshop, html, css, javascript"
+            },
+            {
+                "intro_text_h2" : "Marmurday",
+                "intro_text_strong" : "마머데이 사이트 제작",
+                "intro_text_p1" : "#디자인100%",
+                "intro_text_p2" : "#퍼블리싱100%",
+                "intro_text_p3" : "#pc",
+                "intro_text_p4" : "#전체page",
+                "site_domain": "https://marday.cafe24.com/",
+                "figure_img" : "images/marmurday.jpg",
+                "workinfo_text_p" : "핸드폰 케이스 제작 업체의 웹사이트를 제작하였습니다. 깔끔하면서도 검색창을 통해 업체만의 개성을 표현하였습니다. ",
+                "workinfo_color1" : "#ff8a56",
+                "workinfo_color2" : "#c6bcb0",
+                "workinfo_text_period" : "제작 기간: 2023. 03. 16 ~ 2023. 03. 21",
+                "workinfo_text_tool" : "사용 툴: photoshop, html, css, 카페24"  
+            },
+            {
+                "intro_text_h2" : "Orion",
+                "intro_text_strong" : "오리온 사이트 리뉴얼",
+                "intro_text_p1" : "#디자인100%",
+                "intro_text_p2" : "#퍼블리싱100%",
+                "intro_text_p3" : "#반응형",
+                "intro_text_p4" : "#메인페이지",
+                "site_domain": "http://5unset.kr/03orion",
+                "figure_img" : "images/orion.jpg",
+                "workinfo_text_p" : "글로벌 식품 기업 오리온의 웹사이트를 반응형으로 제작하였습니다. 메인 비주얼은 3장의 이미지가 슬라이드 되면서 점차 확대되는 효과를 구현하였습니다.",
+                "workinfo_color1" : "#96000b",
+                "workinfo_color2" : "#ebe5cf",
+                "workinfo_color3" : "#c4a944",
+                "workinfo_text_period" : "제작 기간: 2023. 02. 13 ~ 2023. 02. 16",
+                "workinfo_text_tool" : "사용 툴: photoshop, html, css, javascript"
+            },
+            {
+                "intro_text_h2" : "Saesol Tech Dev",
+                "intro_text_strong" : "새솔기술개발 사이트 디자인",
+                "intro_text_p1" : "#디자인100%",
+                "intro_text_p2" : "#pc",
+                "intro_text_p3" : "#메인페이지",
+                "site_domain": "https://www.notion.so/Saesol-Tech-Dev-f967df0c84e64f94a18770f7aef3ee96?pvs=4",
+                "figure_img" : "images/saesol.jpg",
+                "workinfo_text_p" : "소방설비 전문업체의 웹사이트를 디자인하였습니다. 가장 중요한 부분인 사업 분야와 실적현황을 메인 페이지 내에서 잘 보여줄 수 있도록 감각적으로 디자인하였습니다.",
+                "workinfo_color1" : "#baa660",
+                "workinfo_text_period" : "제작 기간: 2023. 02. 10",
+                "workinfo_text_tool" : "사용 툴: photoshop"
+            },
+            {
+                "intro_text_h2" : "Bike Hub",
+                "intro_text_strong" : "바이크 허브 앱 디자인",
+                "intro_text_p1" : "#디자인100%",
+                "intro_text_p2" : "#모바일",
+                "site_domain": "https://nonchalant-falcon-6e8.notion.site/Bike-Hub-a984f828b861438c954d7e651e14734a",
+                "figure_img" : "images/bikehub.jpg",
+                "workinfo_text_p" : "오토바이 렌탈 서비스 플랫폼의 앱을 디자인하였습니다. 로고의 색을 활용하여 메인 컬러를 설정했고 기존 로고에 오토바이 아이콘을 추가하여 어플의 용도를 직관적으로 볼 수 있게 디자인하였습니다.",
+                "workinfo_color1" : "#558ED5",
+                "workinfo_color2" : "#EBECF5",
+                "workinfo_color3" : "#EFF0F4",
+                "workinfo_color4" : "#F0F1F7",
+                "workinfo_text_period" : "제작 기간: 2023. 03. 27 ~ 2023. 03. 28",
+                "workinfo_text_tool" : "사용 툴: photoshop, figma"
+            }
+        ]
+
+    }
+]
+
